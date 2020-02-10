@@ -2,12 +2,9 @@ const fs = require('fs');
 
 const addNote = function(title,body){
     const notes = loadNotes();
-    
 
     const duplicateNotes = notes.filter((note)=>{
-       
         return note.title === title
-
     })
 
     if(duplicateNotes.length ==- 0){
@@ -29,7 +26,6 @@ const saveNotes = function(notes){
 }
 
 const loadNotes = function () {
-
     try {
         const dataBuffer  = fs.readFileSync('notes.json');
         const dataJSON =  dataBuffer.toString();
@@ -49,28 +45,23 @@ const deleteNote = function(title){
     const notes = loadNotes();
     
     const duplicateNotes = notes.filter((note)=>{
-       
         return note.title === title
-
     });
 
     if(duplicateNotes.length)
     {
         console.log(notes);
-
         const slicedNotes = notes.filter((note)=>{
-       
             return note.title != title
-    
         });
 
         console.log(slicedNotes);
         saveNotes(slicedNotes);
+        
         //Print
-        const updateNotes = loadNotes();
         console.log("Record has been delete title: "+title);
         console.log("Here is an updated List");
-        console.log(updateNotes);
+        getNote();
     }else{
         console.log("No record found");
     }
@@ -98,13 +89,11 @@ const editNote = function(title,body){
              return note;
         });
 
-        console.log(updatedRecords);
         saveNotes(updatedRecords);
         //Print
-         const updateNotes = loadNotes();
          console.log("Record has been udpated title: "+title);
          console.log("Here is an updated List");
-         console.log(updateNotes);
+         getNote();
     }else{
         console.log("No record found");
     }
