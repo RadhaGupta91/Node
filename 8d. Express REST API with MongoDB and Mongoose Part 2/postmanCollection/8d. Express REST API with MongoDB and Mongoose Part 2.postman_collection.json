@@ -1,0 +1,308 @@
+{
+	"variables": [],
+	"info": {
+		"name": "8d. Express REST API with MongoDB and Mongoose Part 2",
+		"_postman_id": "fc07620d-06c7-a936-4daf-0105dd7e06fa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"url": "http://localhost:3000/dish",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Uthappizza",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments",
+			"request": {
+				"url": "http://localhost:3000/dish",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Uthappizza",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createTable",
+			"request": {
+				"url": "http://localhost:3000/dish",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Node",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTable",
+			"request": {
+				"url": "http://localhost:3000/dish",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCommentsByDishID",
+			"request": {
+				"url": "http://localhost:3000/dish",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "findByID",
+			"request": {
+				"url": "http://localhost:3000/dish/5e4bcfdcee477c00f051176e",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"url": "http://localhost:3000/dish/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": " basic and advance code "
+						},
+						{
+							"key": "image",
+							"value": "NO image available"
+						},
+						{
+							"key": "category",
+							"value": "Tech"
+						},
+						{
+							"key": "price",
+							"value": "1220"
+						},
+						{
+							"key": "name",
+							"value": "C++"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post comments",
+			"request": {
+				"url": "http://localhost:3000/dish/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": " basic and advance code "
+						},
+						{
+							"key": "image",
+							"value": "NO image available"
+						},
+						{
+							"key": "category",
+							"value": "Tech"
+						},
+						{
+							"key": "price",
+							"value": "1220"
+						},
+						{
+							"key": "name",
+							"value": "C++"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "http://localhost:3000/dish/",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBYID",
+			"request": {
+				"url": "http://localhost:3000/dish/5e4bd491ee477c00f0511772",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCommentsByCommentID",
+			"request": {
+				"url": "http://localhost:3000/dish/5e4bd590ee477c00f0511773/comments/5e4be42f2c215516c4092b3e",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCommentsByCommentID",
+			"request": {
+				"url": "http://localhost:3000/dish/5e4bd590ee477c00f0511773/comments/5e4be42f2c215516c4092b3e",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

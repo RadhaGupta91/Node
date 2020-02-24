@@ -1,5 +1,6 @@
+//object
 var rect = {
-    perimeter: (x, y) => (2*(x+y)),
+    perimeter: (x, y) => (2*(x+y)), //property
     area: (x, y) => (x*y)
 };
 
@@ -18,3 +19,9 @@ solveRect(2,4);
 solveRect(3,5);
 solveRect(0,5);
 solveRect(-3,5);
+
+//To run file
+// 1. npm init
+// 2. open package.json 
+// 3. add "start":"node index"
+// 4. npm start
